@@ -1,5 +1,6 @@
 datasource db {
   provider = "sqlite"
+ 
 }
 
 generator client {
@@ -16,8 +17,8 @@ model Task {
   id          String     @id @default(uuid())
   title       String
   description String?
-  dueDate     DateTime
-  topic       String
+  dueDate     DateTime?
+  topic       String?
   status      TaskStatus @default(TODO)
   isArchived  Boolean    @default(false)
   createdAt   DateTime   @default(now())
