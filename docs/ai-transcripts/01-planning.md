@@ -151,4 +151,3 @@ npx prisma db push
 
 ---
 
-The preceding document was planned with the assistance of the following: GeminiWeb[Gemini 3.6 Flash]
